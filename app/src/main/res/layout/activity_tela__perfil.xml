@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:background="@drawable/side_nav_bar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            app:contentScrim="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="850dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editar_nome"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Nome"
+                android:translationY="40px" />
+
+            <EditText
+                android:id="@+id/editar_email"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Email (opcional)"
+                android:translationY="120px" />
+
+            <TextView
+                android:id="@+id/Disponibilidade"
+                android:layout_width="match_parent"
+                android:layout_height="230px"
+                android:text="Disponibilidade"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:translationX="50px"
+                android:translationY="180px" />
+
+            <CheckBox
+                android:id="@+id/disponivel_segunda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Segunda-Feira"
+                android:textColorLink="@color/colorPrimary"
+                android:textCursorDrawable="@color/colorPrimaryDark"
+                android:translationX="75px"
+                android:translationY="25px"
+                android:typeface="normal" />
+
+            <CheckBox
+                android:id="@+id/disponivel_terca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Terça-Feira"
+                android:translationX="75px"
+                android:translationY="25px" />
+
+            <CheckBox
+                android:id="@+id/disponivel_quarta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quarta-Feira"
+                android:translationX="75px"
+                android:translationY="25px" />
+
+            <CheckBox
+                android:id="@+id/disponivel_quinta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quinta-Feira"
+                android:translationX="75px"
+                android:translationY="25px" />
+
+            <CheckBox
+                android:id="@+id/disponivel_sexta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sexta-Feira"
+                android:translationX="75px"
+                android:translationY="25px" />
+
+            <CheckBox
+                android:id="@+id/disponivel_sabado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sábado"
+                android:translationX="75px"
+                android:translationY="25px" />
+
+            <TextView
+                android:id="@+id/tipo_de_trabalho"
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:text="Tipo de Trabalho"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:translationX="50px"
+                android:translationY="75px" />
+
+            <CheckBox
+                android:id="@+id/lavar_louca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lavar Louça"
+                android:translationX="75px" />
+
+            <CheckBox
+                android:id="@+id/limpar_casa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Limpar Casa"
+                android:translationX="75px" />
+
+            <CheckBox
+                android:id="@+id/baba"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Babá"
+                android:translationX="75px" />
+
+            <CheckBox
+                android:id="@+id/lavar_roupa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lavar Roupa"
+                android:translationX="75px" />
+
+            <CheckBox
+                android:id="@+id/cozinhar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cozinhar"
+                android:translationX="75px" />
+
+            <CheckBox
+                android:id="@+id/cuidar_da_casa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cuidar Da Casa"
+                android:translationX="75px" />
+
+            <Button
+                android:id="@+id/salvar_alteracoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salvar Alterações"
+                android:translationY="5dp" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:focusable="auto"
+        android:src="@drawable/ic_perfil_back"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_anchor="@+id/appbar"
+        app:layout_anchorGravity="start|top" />
+
+</android.support.design.widget.CoordinatorLayout>

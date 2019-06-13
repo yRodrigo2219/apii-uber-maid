@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tela_Config">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                app:backgroundTint="@color/colorAccent"
+                app:srcCompat="@drawable/ic_perfil_back" />
+
+            <TextView
+                android:id="@+id/resumoPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Resumo Perfil"
+                android:textSize="22sp"
+                android:translationY="30dp" />
+
+            <TextView
+                android:id="@+id/nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_nome_usuario"
+                android:translationX="50px" />
+
+            <TextView
+                android:id="@+id/numero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@android:string/emptyPhoneNumber"
+                android:translationX="50px" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:translationX="50px" />
+
+            <TextView
+                android:id="@+id/favoritos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/favoritos"
+                android:textSize="22sp"
+                android:translationY="10dp" />
+
+            <Button
+                android:id="@+id/add_fav"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/add_favoritos"
+                android:translationY="5dp" />
+
+            <Button
+                android:id="@+id/add_fav_2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/add_favoritos"
+                android:translationY="5dp" />
+
+            <Button
+                android:id="@+id/add_fav_4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/add_favoritos"
+                android:translationY="5dp" />
+
+            <Button
+                android:id="@+id/add_fav_5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/add_favoritos"
+                android:translationY="5dp" />
+
+            <Button
+                android:id="@+id/add_fav_3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/add_favoritos"
+                android:translationY="5dp" />
+
+            <TextView
+                android:id="@+id/conta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/conta"
+                android:textSize="22sp"
+                android:translationY="5dp" />
+
+            <Button
+                android:id="@+id/premium_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/conta_premio" />
+
+            <Button
+                android:id="@+id/deletar_conta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/deletar_conta" />
+
+            <TextView
+                android:id="@+id/privacidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/privacidade"
+                android:textSize="22sp"
+                android:translationY="5dp" />
+
+            <Button
+                android:id="@+id/politica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/politica" />
+
+            <Button
+                android:id="@+id/termos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/termos" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

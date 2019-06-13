@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <SearchView
+        android:id="@+id/procura"
+        android:layout_width="382dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="382dp"
+        android:layout_height="286dp"
+        android:layout_marginTop="256dp"
+        app:layout_constraintEnd_toEndOf="@+id/procura"
+        app:layout_constraintStart_toStartOf="@+id/procura"
+        app:layout_constraintTop_toBottomOf="@+id/procura">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_cuidar_casa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="cuidar da casa" />
+
+            <Button
+                android:id="@+id/btn_cozinhar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cozinhar" />
+
+            <Button
+                android:id="@+id/btn_lavar_roupa"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Lavar Roupa" />
+
+            <Button
+                android:id="@+id/btn_lavar_louca"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Lavar Louça" />
+
+            <Button
+                android:id="@+id/btn_baba"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Babá" />
+
+            <Button
+                android:id="@+id/btn_limpar_casa"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Limpar Casa" />
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/highlights"
+        android:layout_width="405dp"
+        android:layout_height="217dp"
+        android:layout_marginTop="8dp"
+        android:alwaysDrawnWithCache="false"
+        android:animationCache="true"
+        android:clickable="false"
+        android:layoutMode="clipBounds"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/procura"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="@+id/procura"
+        app:layout_constraintTop_toBottomOf="@+id/procura">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="view 1"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="view 2"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="view 3"/>
+    </android.support.v4.view.ViewPager >
+
+</android.support.constraint.ConstraintLayout>
